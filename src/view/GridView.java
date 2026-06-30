@@ -53,12 +53,12 @@ public class GridView extends JPanel {
 
                 // Als er een cel staat én hij leeft, gaan we hem inkleuren
                 if (cell != null && cell.isAlive()) {
-                    // Als het een Conway-cel is -> teken een BLAUW VIERKANT
+                    // Als het een Conway-cel is -> teken een ORANJE VIERKANT
                     if (cell.getBehavior().getType() == CellType.CONWAY) {
                         g.setColor(Color.ORANGE);
                         g.fillRect(x * cellSize + 1, y * cellSize + 1, cellSize - 1, cellSize - 1);
                     } else {
-                        // Als het een Alternatieve cel is -> teken een RODE CIRKEL (Oval)
+                        // Als het een Alternatieve cel is -> teken een MAGENTA CIRKEL (Oval)
                         g.setColor(Color.MAGENTA);
                         g.fillOval(x * cellSize + 1, y * cellSize + 1, cellSize - 1, cellSize - 1);
                     }
